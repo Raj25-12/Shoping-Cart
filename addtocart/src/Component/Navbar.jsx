@@ -1,21 +1,20 @@
 import React from 'react'
-import '@fortawesome/fontawesome-free/css/all.min.css'
 import '../Style/navbar.css'
 
-const Navbar = ({size,setShow}) => {
+const Navbar = ({size, setShow}) => {
   return (
     <nav>
-    <div className='nav_box'>
-      <span className='my_shop'>
-        Dxo Shop
-      </span>
-        <div className='cart' onClick={()=>setShow(false)}>
-            <span>
-             <i className='fas fa-cart-plus'></i>
+        <div className='nav_box'>
+            <span className='my_shop' onClick={()=>setShow(true)}>
+                My Shopping
             </span>
-           <span>{size}</span>
-        </div>      
-    </div>
+            <div className='cart' onClick={()=>setShow(false)}>
+                <span>
+                    <i style={{fontSize:25}} className="fas fa-cart-plus"></i>
+                </span>
+                <span>{size}</span>
+            </div>
+        </div>
     </nav>
   )
 } 

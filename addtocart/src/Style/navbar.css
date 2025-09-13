@@ -1,42 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 nav{
-    width: 100%;
-    background-color: orange;
-    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: skyblue;
+    position: relative;
 }
 
 .nav_box{
-    width:80%;
-    margin: auto;
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
+
 .my_shop{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color:#fff;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    cursor:pointer;
-    margin:10px;
-}
-.cart{
+    font-size: 25px;
     cursor: pointer;
 }
 
-.cart span:nth-child(1){
-    font-size: 2rem;
-    color:white
+.cart{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.cart span:nth-child(2){
-    padding:0 3px;
-    background-color: antiquewhite;
-    font-weight: bold;
-     position: relative;
-     top: -15px;
-     border-radius: 50%;
+.cart span{
+    font-size: 25px;
 }
